@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --dark-one: #333;
+    --dark-two: #7a7a7a;
+    --main-color: #29465B;
+    --light-one: #fff;
+    --light-two: #f9fafb;
+    --light-three: #f6f7fb;
+}
+
+/* General Size */
+*, 
+*::before. 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button, input, textarea{
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    z-index: 5;
+    max-width: 92rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+/* End of General Size */
+
+header{
+    width: 100%;
+    background-color: var(--light-three);
+    overflow:hidden;
+}
+
+nav{
+    width:100%;
+    position: relative;
+    z-index: 50; 
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+}
+
+.logo{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: left;
+}
+.links ul{
+    display: flex;
+}
+
+.links a{
+    display: inline-block;
+    padding: 0.9rem 1.2rem;
+    color: var(--dark-one);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.3s; 
+    text-align: center;
+}
+
+.links a:hover{
+    color:#4863A0;
+
+
+}
+
+.links a.active {
+    background-color: var(--main-color);
+    color: var(--light-one);
+    border-radius: 2rem; 
+    font-size: 1rem;
+    padding: 0.9rem 2.1rem;
+    margin-left: 1rem; 
+    text-align: center;
+}
+
+.links a.active:hover{
+    color: var(--light-one);
+    background-color: #4863A0;
+}
+
+.header-content .container.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: cal(100vh - 6rem);
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
+.btn{
+    background-color: var(--main-color);
+    color: var(--light-one);
+    border-radius: 2.5rem; 
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+    margin-left: 0rem; 
+    text-align: center;
+}
+
+.btn:hover{
+    color: var(--light-one);
+    background-color: #4863A0;
+}
